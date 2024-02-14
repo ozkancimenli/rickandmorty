@@ -20,8 +20,6 @@ ReactDOM.render(
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
-<<<<<<< HEAD
+
 );
-=======
-);
->>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
+

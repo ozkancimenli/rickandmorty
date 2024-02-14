@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 /* CharacterSelect.css */
-=======
->>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
+
 .character-select {
     width: 75%;
     justify-content: center;
@@ -43,9 +41,6 @@
     background-color: var(--background-light);
     color: var(--text-light);
     transition: background-color 0.3s, color 0.3s;
-<<<<<<< HEAD
+
   }
-=======
-  }
-  
->>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
+
