@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Queries.ts
+=======
+// queries.ts
+>>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
 import { gql } from "@apollo/client";
 
 // Define the Character interface
@@ -39,4 +43,8 @@ const getAllCharacters = gql`
 
 // Export the getAllCharacters query and the Character interface
 export { getAllCharacters };
+<<<<<<< HEAD
 export type { Character };
+=======
+export type { Character };
+>>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608

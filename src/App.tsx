@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 //App.tsx
 import React, { useState } from 'react';
 import CharacterSelect from './components/CharacterSelect';
 import { useQuery } from '@apollo/client';
 import { getAllCharacters } from './components/Queries';
+=======
+import React, { useState } from 'react';
+import CharacterSelect from './components/CharacterSelect';
+import { useQuery } from '@apollo/client';
+import { getAllCharacters } from './components/queries';
+>>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
 import './App.css';
 
 const App: React.FC = () => {

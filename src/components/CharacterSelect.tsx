@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //CharacterSelect.tsx
+=======
+>>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
 import React, { useState } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import Checkbox from '@mui/material/Checkbox';
@@ -105,4 +108,8 @@ const CharacterSelect: React.FC<CharacterSelectProps> = ({
   );
 };
 
+<<<<<<< HEAD
 export default CharacterSelect;
+=======
+export default CharacterSelect;
+>>>>>>> abf5ebea289774dc76d9fd8394b5b715892ae608
