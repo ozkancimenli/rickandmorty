@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CharacterSelect from './components/CharacterSelect';
+import { useQuery } from '@apollo/client';
+import { getAllCharacters } from './components/queries';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  const { loading, error, data } = useQuery(getAllCharacters);
+  const [selectedCharacters, setSelectedCharacters] = useState<any[]>([]);
+
+  // Loading durumu kontrolü
+  if (loading) return <p>Loading...</p>;
+
+  // Hata durumu kontrolü
+  if (error) return <p>Error: {error.message}</p>;
+
+  // API'den alınan karakter verileri
+  const characters = data.characters.results;
+
+  // Karakter seçimini yöneten fonksiyon
+  const handleCharacterSelect = (characters: any[]) => {
+    setSelectedCharacters(characters);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Karakter seçim komponenti */}
+      <CharacterSelect
+        characters={characters}
+        selectedCharacters={selectedCharacters}
+        onCharacterSelect={handleCharacterSelect}
+      />
     </div>
   );
-}
+};
 
 export default App;
